@@ -11,6 +11,7 @@ and uncovering the fate of lost spirits.
 Each run is a new loop with different details, choices, and consequences.
 """
 
+import os
 import sys
 from google import genai
 from google.genai import types
@@ -25,7 +26,7 @@ from google.genai import types
 #   client = genai.Client()
 #
 # If you ever want to pass the key explicitly, you can do:
-client = genai.Client(api_key="")
+client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
 #client = genai.Client()
 
 # You can swap models here if you want to experiment.
