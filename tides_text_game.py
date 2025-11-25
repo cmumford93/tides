@@ -25,7 +25,7 @@ from google.genai import types
 #   client = genai.Client()
 #
 # If you ever want to pass the key explicitly, you can do:
-client = genai.Client(api_key="AIzaSyDl0IcEpqArNzakODdXYQaX3TTmzmZ7EB8")
+client = genai.Client(api_key="")
 #client = genai.Client()
 
 # You can swap models here if you want to experiment.
@@ -292,3 +292,4 @@ if __name__ == "__main__":
         print(e)
         print("\nCheck your API key, network connection, and model name.")
         sys.exit(1)
+
